@@ -46,6 +46,8 @@ closure is very important. It allows access to an outer functions' scope from an
 
     5. Why do we need super() in an extended class?
 
+You need it to enable lookup to the parent class from a child.
+
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 
 ## Instructions
