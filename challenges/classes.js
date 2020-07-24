@@ -27,12 +27,18 @@ class CubeMaker extends AnotherCuboidMaker{
     this.width = attr.width;
     this.height = attr.height;
   }
+  cubeVolume(){
+    return this.length * this.length * this.length;
+  }
+  cubeSurfaceArea(){
+    return (this.length * this.length) * 6;
+  }
 }
 
 const cubes = new CubeMaker ({
-    length: 7,
-    width: 7,
-    height: 7,
+    length: 5,
+    width: 5,
+    height: 5,
 });
 
 // Test your volume and surfaceArea methods by uncommenting the logs below:
