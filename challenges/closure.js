@@ -25,14 +25,14 @@ myFunction();
 /* Create a function called `summation` that accepts a parameter and uses a counter to return the summation of that number. For example, `summation(4)` should return 10 because 1+2+3+4 is 10. */
 
 function summation(number){
-  const numbers = [];
+  let numbers = 0;
   for(i=1; i<=number; i++){
-    numbers.push(i);
+    numbers += i;
   }
-  const result = numbers.reduce(function(num, item){
-    return num + item;
-  },0);
-  return result;  
+  // const result = numbers.reduce(function(num, item){
+  //   return num + item;
+  // },0);
+  return numbers;  
 }
 
 console.log(summation(4));
