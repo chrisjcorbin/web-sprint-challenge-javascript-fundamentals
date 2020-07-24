@@ -11,7 +11,7 @@ function myFunction() {
 
   function nestedFunction() {
     console.log(internal);
-  };
+  }
   nestedFunction();
 }
 myFunction();
@@ -33,6 +33,6 @@ function summation(number){
     return num + item;
   },0);
   return result;  
-};
+}
 
 console.log(summation(4));

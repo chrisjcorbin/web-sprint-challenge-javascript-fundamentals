@@ -61,6 +61,7 @@ The zoos need to know their total animal population across the United States. Fi
 
 let populationTotal = 0;
 console.log(populationTotal);
+
 const totalPop = zooAnimals.reduce(function(num, item){
   return num + item.population;
 },0);
@@ -79,7 +80,7 @@ console.log(totalPop);
 
 function consume(a, b, cb){
   return cb(a,b);  
-};
+}
 
 /* Step 2: Create several functions to callback with consume();
   * Create a function named add that returns the sum of two numbers
@@ -90,16 +91,16 @@ function consume(a, b, cb){
 function add(num1, num2){
   const sum = num1 + num2;
   return sum;  
-};
+}
 
 function multiply(num1, num2){
   const product = num1 * num2;
   return product; 
-};
+}
 
 function greeting(first, last){
   return `Hello ${first} ${last}, nice to meet you!`;
-};
+}
 
 /* Step 3: Check your work by un-commenting the following calls to consume(): */
 console.log(consume(2, 2, add)); // 4
